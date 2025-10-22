@@ -327,3 +327,10 @@ footer {
   .certificates-grid,
   .skills-grid { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+}
