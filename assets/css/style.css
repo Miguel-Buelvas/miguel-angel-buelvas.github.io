@@ -402,3 +402,53 @@ footer {
   transform: rotate(-15deg);
 }
 
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.exp-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(155,92,255,0.3);
+}
+
+.exp-card h3 {
+  color: var(--primary-light);
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.exp-card p {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.exp-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.exp-card li {
+  margin-bottom: 0.5rem;
+  color: #d0d0d0;
+  font-size: 0.95rem;
+}
+
+.exp-card li::before {
+  content: "▹";
+  color: var(--primary);
+  margin-right: 8px;
+}
