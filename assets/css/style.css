@@ -33,7 +33,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Efecto de brillo flotante sutil */
 body::before {
   content: "";
   position: fixed;
@@ -194,7 +193,7 @@ body::before {
 }
 
 /* ================================================
-   SOCIAL LINKS
+   SOCIAL LINKS (original)
    ================================================ */
 .social-links {
   display: flex;
@@ -293,7 +292,7 @@ footer {
   z-index: -1;
   overflow: hidden;
   opacity: 0.07;
-  pointer-events: none; /* evita interferir con clics */
+  pointer-events: none;
 }
 
 .animated-bg img {
@@ -303,7 +302,6 @@ footer {
   filter: drop-shadow(0 0 10px rgba(180, 100, 255, 0.2));
 }
 
-/* Movimiento aleatorio */
 .animated-bg img:nth-child(1) { top: 80%; left: 10%; animation-delay: 0s; }
 .animated-bg img:nth-child(2) { top: 60%; left: 80%; animation-delay: 10s; }
 .animated-bg img:nth-child(3) { top: 30%; left: 50%; animation-delay: 20s; }
@@ -362,5 +360,45 @@ footer {
 .contact-card a:hover i {
   color: var(--primary);
   text-shadow: 0 0 8px var(--primary);
+}
+
+/* ================================================
+   ÍCONOS SOCIALES REDONDOS Y ANIMADOS (nuevo)
+   ================================================ */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.icon-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--secondary);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(155, 92, 255, 0.1);
+}
+
+.icon-btn:hover {
+  transform: scale(1.15) rotate(10deg);
+  color: var(--primary-light);
+  box-shadow: 0 0 25px rgba(155, 92, 255, 0.5);
+}
+
+.icon-btn i {
+  transition: transform 0.4s ease;
+}
+
+.icon-btn:hover i {
+  transform: rotate(-15deg);
 }
 
