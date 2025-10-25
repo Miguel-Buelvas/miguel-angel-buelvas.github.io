@@ -280,3 +280,37 @@ footer {
   .hero-subtitle { font-size: 1.2rem; }
   .profile-photo { width: 160px; height: 160px; }
 }
+
+/* Fondo animado con íconos tecnológicos */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.07;
+}
+
+.animated-bg img {
+  position: absolute;
+  width: 60px;
+  animation: float 40s infinite linear;
+  filter: drop-shadow(0 0 10px rgba(180, 100, 255, 0.2));
+}
+
+/* Movimiento aleatorio */
+.animated-bg img:nth-child(1) { top: 80%; left: 10%; animation-delay: 0s; }
+.animated-bg img:nth-child(2) { top: 60%; left: 80%; animation-delay: 10s; }
+.animated-bg img:nth-child(3) { top: 30%; left: 50%; animation-delay: 20s; }
+.animated-bg img:nth-child(4) { top: 90%; left: 60%; animation-delay: 5s; }
+.animated-bg img:nth-child(5) { top: 10%; left: 20%; animation-delay: 15s; }
+.animated-bg img:nth-child(6) { top: 40%; left: 70%; animation-delay: 25s; }
+
+@keyframes float {
+  0%   { transform: translateY(0) rotate(0deg) scale(1); }
+  50%  { transform: translateY(-50px) rotate(180deg) scale(1.1); }
+  100% { transform: translateY(0) rotate(360deg) scale(1); }
+}
+
