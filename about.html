@@ -10,6 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Fondo animado -->
+  <div class="animated-bg">
+    <img src="assets/images/icons/git.png" alt="Git">
+    <img src="assets/images/icons/python.png" alt="Python">
+    <img src="assets/images/icons/java.png" alt="Java">
+    <img src="assets/images/icons/html5.png" alt="HTML5">
+    <img src="assets/images/icons/css3.png" alt="CSS3">
+    <img src="assets/images/icons/js.png" alt="JavaScript">
+  </div>
+
   <header class="navbar">
     <nav>
       <ul>
@@ -30,7 +40,7 @@
   <main class="page-content">
     <h1 class="page-title">Sobre mí</h1>
     
-    <section class="about-section">
+    <section class="about-card">
       <p>
         Soy un <strong>Junior Software Developer</strong> recién egresado como <em>Tecnólogo en Análisis y Desarrollo de Software</em> del SENA, con experiencia práctica en el desarrollo de herramientas web internas, gestión de bases de datos y apoyo a iniciativas de educación digital.
       </p>
@@ -42,7 +52,7 @@
     <section class="skills-section">
       <h2>Habilidades Técnicas</h2>
       <div class="skills-grid">
-        <div class="skill-category">
+        <div class="skill-card">
           <h3>Desarrollo Web</h3>
           <ul>
             <li>HTML5</li>
@@ -50,7 +60,7 @@
             <li>JavaScript</li>
           </ul>
         </div>
-        <div class="skill-category">
+        <div class="skill-card">
           <h3>Backend & Datos</h3>
           <ul>
             <li>Python</li>
@@ -58,7 +68,7 @@
             <li>Procesamiento de datos</li>
           </ul>
         </div>
-        <div class="skill-category">
+        <div class="skill-card">
           <h3>Plataformas & Herramientas</h3>
           <ul>
             <li>Diseño de MOOCs</li>
@@ -67,7 +77,7 @@
             <li>Fundamentos de nube y Big Data</li>
           </ul>
         </div>
-        <div class="skill-category">
+        <div class="skill-card">
           <h3>Metodologías</h3>
           <ul>
             <li>Control de versiones (Git/GitHub)</li>
@@ -80,10 +90,12 @@
 
     <section class="languages-section">
       <h2>Idiomas</h2>
-      <ul>
-        <li><strong>Español</strong> – Nativo</li>
-        <li><strong>Inglés</strong> – Intermedio (lectura técnica y comunicación básica)</li>
-      </ul>
+      <div class="lang-card">
+        <ul>
+          <li><strong>Español</strong> – Nativo</li>
+          <li><strong>Inglés</strong> – Intermedio (lectura técnica y comunicación básica)</li>
+        </ul>
+      </div>
     </section>
   </main>
 
@@ -92,3 +104,4 @@
   </footer>
 </body>
 </html>
+
