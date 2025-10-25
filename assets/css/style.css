@@ -447,6 +447,49 @@ footer {
   font-size: 0.95rem;
 }
 
+/* ================================================
+   TARJETAS VISUALES "SOBRE MÍ" CON EFECTO PLATEADO
+   ================================================ */
+.about-card, .skill-card, .lang-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(211, 211, 211, 0.3);
+  border-radius: 14px;
+  padding: 1.8rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(8px);
+}
+
+.about-card:hover, .skill-card:hover, .lang-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-light);
+  box-shadow: 0 0 25px rgba(155, 92, 255, 0.3), 0 0 40px rgba(211, 211, 211, 0.15);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.8rem;
+}
+
+.skill-card h3 {
+  color: var(--primary-light);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 0 10px rgba(155, 92, 255, 0.3);
+}
+
+.lang-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lang-card li {
+  margin-bottom: 0.6rem;
+  color: #d8d8d8;
+}
 .exp-card li::before {
   content: "▹";
   color: var(--primary);
