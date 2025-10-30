@@ -3,85 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Proyectos | Portafolio de Miguel Buelvas</title>
+  <title>Proyectos – Miguel Buelvas</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Estilo similar al de la sección de experiencia */
+    body {
+      background: radial-gradient(circle at top left, #0a0014, #090011, #080010);
+      color: #e5e5e5;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: #b56bff;
+      font-size: 2.5rem;
+      margin-top: 60px;
+    }
+
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      width: 350px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(170, 0, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(170, 0, 255, 0.4);
+    }
+
+    .project-card img, .project-card video {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      color: #d6b4ff;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .project-links a {
+      color: #b56bff;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .project-links a:hover {
+      color: #ffffff;
+    }
+  </style>
 </head>
+<body>
+  <h1>Mis Proyectos</h1>
+  <p>Explora mis principales proyectos en desarrollo web, IoT y documentación técnica.</p>
 
-<body class="dark-theme">
-  <!-- ======= NAVBAR ======= -->
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="about.html">Perfil</a></li>
-        <li><a href="experience.html">Experiencia</a></li>
-        <li><a href="Proyectos.html" class="active">Proyectos</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ======= SECCIÓN DE PROYECTOS ======= -->
-  <main class="container">
-    <section class="projects-section">
-      <h1 class="section-title">PROYECTOS DESTACADOS</h1>
-      <p class="section-subtitle">Una muestra de mis desarrollos, proyectos IoT y material multimedia educativo.</p>
-
-      <div class="projects-grid">
-        
-        <!-- Proyecto 1: imagen local -->
-        <div class="project-card">
-          <img src="assets/images/proyecto1.jpg" alt="Proyecto Portafolio Web" class="project-image" />
-          <div class="project-info">
-            <h3>Portafolio Web Personal</h3>
-            <p>Diseño y desarrollo de mi sitio web profesional con HTML, CSS y JavaScript.</p>
-            <div class="project-links">
-              <a href="https://miguel-buelvas.github.io" target="_blank" class="btn">Ver sitio</a>
-              <a href="https://github.com/Miguel-Buelvas/portafolio" target="_blank" class="btn-outline">Código</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proyecto 2: video local -->
-        <div class="project-card">
-          <video class="project-video" controls poster="assets/images/proyecto2-poster.jpg">
-            <source src="assets/videos/proyecto2.mp4" type="video/mp4" />
-            Tu navegador no soporta videos HTML5.
-          </video>
-          <div class="project-info">
-            <h3>Proyecto IoT – Control de Iluminación</h3>
-            <p>Automatización de luces con ESP8266 y plataforma web local. Video demostrativo del sistema en acción.</p>
-            <div class="project-links">
-              <a href="https://github.com/Miguel-Buelvas/Proyecto-IoT" target="_blank" class="btn-outline">Código</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proyecto 3: video desde YouTube -->
-        <div class="project-card">
-          <iframe 
-            class="project-video" 
-            src="https://www.youtube.com/embed/VIDEO_ID" 
-            title="Video de Proyecto YouTube"
-            allowfullscreen>
-          </iframe>
-          <div class="project-info">
-            <h3>Animación Educativa 3D</h3>
-            <p>Creación de videos educativos con Blender y DaVinci Resolve para el canal TechLearn Academy.</p>
-            <div class="project-links">
-              <a href="https://www.youtube.com/@TechLearnAcademy" target="_blank" class="btn">Ver en YouTube</a>
-            </div>
-          </div>
-        </div>
-
+  <section class="project-container">
+    
+    <!-- Proyecto 1 -->
+    <div class="project-card">
+      <img src="assets/images/web_project.png" alt="Proyecto Web">
+      <h3>Gestor de Tareas Web</h3>
+      <p>Aplicación web con autenticación de usuarios y gestión de tareas, creada con Flask y MySQL.</p>
+      <div class="project-links">
+        <a href="https://github.com/tuusuario/gestor-tareas" target="_blank">GitHub</a> |
+        <a href="https://youtu.be/ejemplo" target="_blank">Video</a>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <!-- ======= FOOTER ======= -->
-  <footer>
-    <p>© 2025 Miguel Buelvas — Todos los derechos reservados</p>
-  </footer>
+    <!-- Proyecto 2 -->
+    <div class="project-card">
+      <video controls>
+        <source src="assets/videos/demo_iot.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+      <h3>Monitoreo IoT</h3>
+      <p>Sistema de monitoreo IoT con ESP8266, Node-RED y dashboard visual.</p>
+      <div class="project-links">
+        <a href="https://github.com/tuusuario/iot-dashboard" target="_blank">GitHub</a> |
+        <a href="https://youtu.be/ejemplo" target="_blank">Video</a>
+      </div>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="project-card">
+      <img src="assets/images/mooc_design.png" alt="Diseño MOOC">
+      <h3>Diseño de Cursos MOOC</h3>
+      <p>Producción de contenido interactivo y multimedia para plataformas de aprendizaje.</p>
+      <div class="project-links">
+        <a href="https://github.com/tuusuario/mooc-project" target="_blank">GitHub</a> |
+        <a href="https://youtu.be/ejemplo" target="_blank">Video</a>
+      </div>
+    </div>
+
+  </section>
 </body>
 </html>
+
 
