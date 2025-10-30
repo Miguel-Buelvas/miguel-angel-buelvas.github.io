@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos | Portafolio de Miguel Buelvas</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="dark-theme">
+  <!-- ======= NAVBAR ======= -->
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Perfil</a></li>
+        <li><a href="experience.html">Experiencia</a></li>
+        <li><a href="Proyectos.html" class="active">Proyectos</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ======= SECCIÓN DE PROYECTOS ======= -->
+  <main class="container">
+    <section class="projects-section">
+      <h1 class="section-title">PROYECTOS DESTACADOS</h1>
+      <p class="section-subtitle">Una muestra de mis desarrollos, proyectos IoT y material multimedia educativo.</p>
+
+      <div class="projects-grid">
+        
+        <!-- Proyecto 1: imagen local -->
+        <div class="project-card">
+          <img src="assets/images/proyecto1.jpg" alt="Proyecto Portafolio Web" class="project-image" />
+          <div class="project-info">
+            <h3>Portafolio Web Personal</h3>
+            <p>Diseño y desarrollo de mi sitio web profesional con HTML, CSS y JavaScript.</p>
+            <div class="project-links">
+              <a href="https://miguel-buelvas.github.io" target="_blank" class="btn">Ver sitio</a>
+              <a href="https://github.com/Miguel-Buelvas/portafolio" target="_blank" class="btn-outline">Código</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2: video local -->
+        <div class="project-card">
+          <video class="project-video" controls poster="assets/images/proyecto2-poster.jpg">
+            <source src="assets/videos/proyecto2.mp4" type="video/mp4" />
+            Tu navegador no soporta videos HTML5.
+          </video>
+          <div class="project-info">
+            <h3>Proyecto IoT – Control de Iluminación</h3>
+            <p>Automatización de luces con ESP8266 y plataforma web local. Video demostrativo del sistema en acción.</p>
+            <div class="project-links">
+              <a href="https://github.com/Miguel-Buelvas/Proyecto-IoT" target="_blank" class="btn-outline">Código</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: video desde YouTube -->
+        <div class="project-card">
+          <iframe 
+            class="project-video" 
+            src="https://www.youtube.com/embed/VIDEO_ID" 
+            title="Video de Proyecto YouTube"
+            allowfullscreen>
+          </iframe>
+          <div class="project-info">
+            <h3>Animación Educativa 3D</h3>
+            <p>Creación de videos educativos con Blender y DaVinci Resolve para el canal TechLearn Academy.</p>
+            <div class="project-links">
+              <a href="https://www.youtube.com/@TechLearnAcademy" target="_blank" class="btn">Ver en YouTube</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <p>© 2025 Miguel Buelvas — Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
 
