@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Experiencia – Miguel Angel Buelvas</title>
+  <title>Experiencia | Miguel Angel Buelvas</title>
+  <meta name="description" content="Experiencia profesional de Miguel Angel Buelvas Ortega, Junior Software Developer.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 </head>
+
 <body>
-  <!-- Fondo animado -->
-  <div class="animated-bg">
+  <div class="animatedBg">
     <img src="assets/images/icons/git.png" alt="Git">
     <img src="assets/images/icons/python.png" alt="Python">
     <img src="assets/images/icons/java.png" alt="Java">
@@ -20,67 +23,57 @@
     <img src="assets/images/icons/js.png" alt="JavaScript">
   </div>
 
-  <!-- Navbar -->
   <header class="navbar">
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Perfil</a>
-          <div class="dropdown-content">
+          <div class="dropdownContent">
             <a href="about.html">Sobre mí</a>
             <a href="certificates.html">Certificados</a>
           </div>
         </li>
-        <li><a href="experience.html">Experiencia</a></li>
+        <li><a href="experience.html" class="active">Experiencia</a></li>
+        <li><a href="projects.html">Proyectos</a></li>
         <li><a href="contact.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contenido principal -->
-  <main class="page-content">
-    <h1 class="page-title">Experiencia Profesional</h1>
-    <p class="page-intro">Un resumen de mis principales experiencias en desarrollo, documentación y tecnología.</p>
-
-    <section class="experience-grid">
-
-      <div class="exp-card">
-        <h3>Data Management Assistant</h3>
-        <p><strong>Globanix Software Solutions</strong> – Bogotá, Colombia<br>📅 2024 – 2025</p>
-        <ul>
-          <li>Desarrollo de herramientas web internas para el equipo de operaciones.</li>
-          <li>Front-end responsive con <strong>HTML, CSS y JavaScript</strong>.</li>
-          <li>Automatización backend con <strong>Python</strong> y <strong>MySQL</strong>.</li>
-        </ul>
+  <main class="experienceSection">
+    <h1 class="sectionTitle">Experiencia Profesional</h1>
+    
+    <div class="experienceCard">
+      <div class="experienceHeader">
+        <h2>Desarrollador Junior</h2>
+        <span class="company">TecniRadiadores Colombia</span>
+        <span class="locationDate">Bogotá, Colombia | 2024 – 2025</span>
       </div>
+      <ul class="experienceTasks">
+        <li>Colaboré en el desarrollo de herramientas web internas para el equipo de operaciones.</li>
+        <li>Construí interfaces front end responsivas usando HTML, CSS y JavaScript.</li>
+        <li>Apoyé tareas de backend con Python y MySQL, incluyendo automatización de reportes mediante scripts y consultas SQL.</li>
+      </ul>
+    </div>
 
-      <div class="exp-card">
-        <h3>Digital Development & Documentation Intern</h3>
-        <p><strong>EdTech Bogotá Innovadora</strong> – Bogotá, Colombia<br>📅 2024 – 2025</p>
-        <ul>
-          <li>Digitalización de flujos de trabajo y documentación técnica.</li>
-          <li>Diseño de cursos virtuales <strong>MOOC</strong>.</li>
-          <li>Seguridad y respaldo de datos en entornos educativos.</li>
-        </ul>
+    <div class="experienceCard">
+      <div class="experienceHeader">
+        <h2>Asistente de Gestión de Datos</h2>
+        <span class="company">EdTech Bogotá Innovadora</span>
+        <span class="locationDate">Bogotá, Colombia | 2025 – 2026</span>
       </div>
-
-      <div class="exp-card">
-        <h3>Junior Developer</h3>
-        <p><strong>TecniRadiadores Colombia</strong> – Bogotá, Colombia<br>📅 2023 – 2024</p>
-        <ul>
-          <li>Mantenimiento y mejora de sistemas internos de la empresa.</li>
-          <li>Gestión de datos y generación de reportes técnicos.</li>
-          <li>Documentación de procesos y pruebas de funcionalidad.</li>
-        </ul>
-      </div>
-
-    </section>
+      <ul class="experienceTasks">
+        <li>Utilicé herramientas ofimáticas y apliqué prácticas básicas de respaldo de datos y seguridad de la información.</li>
+        <li>Apoyé la digitalización de documentos físicos y la sistematización de información para mejorar accesibilidad y control.</li>
+      </ul>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Miguel Angel Buelvas. Todos los derechos reservados.</p>
+    <p>© 2026 Miguel Angel Buelvas. Todos los derechos reservados.</p>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
